@@ -22,7 +22,6 @@ html {
 
 body {
   background-color: var(--very-light-gray);
-
 }
 
 a {
@@ -56,7 +55,32 @@ nav {
 }
 
 .links li a {
+  position: relative;
   color: var(--grayish-blue);
+}
+
+.links li a::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0.3rem;
+  bottom: -1.9rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: linear-gradient(
+    to right,
+    var(--lime-green),
+    var(--bright-cyan)
+  );
+  transition: 0.4s;
+}
+
+.links li a:hover {
+  color: var(--dark-blue);
+}
+
+.links li a:hover::after {
+  width: 100%;
 }
 
 .btn {
@@ -69,6 +93,11 @@ nav {
   padding: 0.8em 2em;
   border-radius: 2rem;
   font-weight: 700;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  opacity: 0.6;
 }
 
 .main {
@@ -115,8 +144,8 @@ nav {
 
 .intro-img {
   position: absolute;
-  width: 730px;
   overflow: hidden;
+  width: 730px;
   top: -1rem;
   right: 0;
 }
@@ -127,3 +156,11 @@ nav {
   margin-left: 8.7rem;
 }
 
+/* ABOUT SECTION */
+
+.about {
+  background-color: var(--light-grayish-blue);
+  width: 85%;
+  height: calc(100vh - 3.5rem);
+  margin: 0 auto;
+}
