@@ -262,7 +262,9 @@ MAIN SITE
   height: 12rem;
 }
 
-.blog span, .blog h3, .blog p {
+.blog span,
+.blog h3,
+.blog p {
   padding: 0 1rem;
 }
 
@@ -272,10 +274,75 @@ MAIN SITE
 }
 
 .blog h3 {
+  color: var(--dark-blue);
+  cursor: pointer;
   font-size: 1.3rem;
   font-weight: 300;
 }
 
+.blog h3:hover {
+  color: var(--bright-cyan);
+}
+
 .blog p {
   padding-bottom: 1rem;
+}
+
+/* 
+FOOTER
+====== 
+*/
+
+.footer {
+  background-color: var(--dark-blue);
+  height: max-content;
+}
+
+.sub-footer {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 0;
+}
+
+.sub-footer > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.logos > img {
+  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.sub-footer li {
+  list-style: none;
+  line-height: 2rem;
+}
+
+.sub-footer a {
+  color: var(--very-light-gray);
+}
+
+.sub-footer .btn {
+  opacity: 0.8;
+}
+
+.sub-footer .btn:hover {
+  opacity: 1;
+}
+
+.copyright {
+  color: var(--grayish-blue);
 }
