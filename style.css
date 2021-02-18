@@ -316,14 +316,16 @@ FOOTER
 }
 
 .logos > img {
-  -webkit-filter: brightness(0) invert(1);
-  filter: brightness(0) invert(1);
 }
 
 .social {
   display: flex;
   flex-direction: row;
   gap: 1rem;
+}
+
+.social img:hover {
+  background-color: var(--lime-green);
 }
 
 .sub-footer li {
