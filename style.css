@@ -22,6 +22,7 @@ html {
 
 body {
   background-color: var(--very-light-gray);
+
 }
 
 a {
@@ -29,14 +30,17 @@ a {
 }
 
 nav {
+  position: fixed;
+  width: 100%;
   background-color: var(--white);
+  z-index: 10;
 }
 
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
+  width: 85%;
   max-width: 1440px;
   margin: 0 auto;
   padding: 1rem;
@@ -62,6 +66,64 @@ nav {
     var(--lime-green),
     var(--bright-cyan)
   );
-  padding: 1em 2em;
+  padding: 0.8em 2em;
   border-radius: 2rem;
+  font-weight: 700;
 }
+
+.main {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.home {
+  height: calc(100vh - 2rem);
+  display: flex;
+  align-items: center;
+  background-image: url(images/bg-intro-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 520px;
+  background-position-y: -170px;
+}
+
+.sub-home {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.intro {
+  width: 27rem;
+  height: max-content;
+  padding: 1rem;
+  margin-top: 5rem;
+}
+
+.intro-title {
+  color: var(--dark-blue);
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.intro-para {
+  color: var(--grayish-blue);
+  line-height: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.intro-img {
+  position: absolute;
+  width: 730px;
+  overflow: hidden;
+  top: -1rem;
+  right: 0;
+}
+
+.intro-img img {
+  width: 100%;
+  height: auto;
+  margin-left: 8.7rem;
+}
+
