@@ -7,6 +7,7 @@
 html {
   font-family: "Public Sans", sans-serif;
   font-size: 18px;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -17,4 +18,50 @@ html {
   --light-grayish-blue: hsl(220, 16%, 96%);
   --very-light-gray: hsl(0, 0%, 98%);
   --white: hsl(0, 0%, 100%);
+}
+
+body {
+  background-color: var(--very-light-gray);
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  background-color: var(--white);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.links {
+  display: flex;
+}
+
+.links li {
+  list-style: none;
+  margin: 0.5em;
+}
+
+.links li a {
+  color: var(--grayish-blue);
+}
+
+.btn {
+  color: var(--light-grayish-blue);
+  background-image: linear-gradient(
+    to right,
+    var(--lime-green),
+    var(--bright-cyan)
+  );
+  padding: 1em 2em;
+  border-radius: 2rem;
 }
