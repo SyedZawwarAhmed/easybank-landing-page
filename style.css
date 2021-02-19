@@ -319,14 +319,11 @@ FOOTER
   display: flex;
   flex-direction: row;
   gap: 1rem;
+  cursor: pointer;
 }
 
 .social-fill {
   display: none;
-}
-
-.social img:hover {
-  
 }
 
 .sub-footer li {
