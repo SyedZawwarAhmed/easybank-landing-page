@@ -315,17 +315,18 @@ FOOTER
   gap: 3rem;
 }
 
-.logos > img {
-}
-
 .social {
   display: flex;
   flex-direction: row;
   gap: 1rem;
 }
 
+.social-fill {
+  display: none;
+}
+
 .social img:hover {
-  background-color: var(--lime-green);
+  
 }
 
 .sub-footer li {
@@ -335,6 +336,10 @@ FOOTER
 
 .sub-footer a {
   color: var(--very-light-gray);
+}
+
+.sub-footer ul a:hover {
+  color: var(--lime-green);
 }
 
 .sub-footer .btn {
