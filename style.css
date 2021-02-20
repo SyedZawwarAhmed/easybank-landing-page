@@ -23,8 +23,22 @@ html {
 }
 
 body {
+  position: relative;
   background-color: var(--very-light-gray);
-  height: max-content;
+}
+
+.overlay {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  background: black;
+  opacity: 0;
+  z-index: 1;
+  transition: 0.3s;
 }
 
 a {
@@ -128,6 +142,7 @@ nav {
 }
 
 .mobile-nav {
+  display: none;
   position: fixed;
   top: 4rem;
   left: 50%;
@@ -155,10 +170,22 @@ MAIN SITE
 */
 
 .main {
+  /* position: relative; */
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
 }
+
+/* .main::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: black;
+  opacity: 0.5;
+} */
 
 /* HOME PAGE */
 
@@ -332,9 +359,21 @@ FOOTER
 */
 
 .footer {
+  /* position: relative; */
   background-color: var(--dark-blue);
   height: max-content;
 }
+
+/* .footer::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: black;
+  opacity: 0.5;
+} */
 
 .sub-footer {
   width: var(--general-width);
@@ -521,7 +560,7 @@ MEDIA QURRIES
   }
 
   .intro-img {
-    top: -12%;
+    top: -3rem;
     right: 50%;
     transform: translateX(50%);
     width: 450px;

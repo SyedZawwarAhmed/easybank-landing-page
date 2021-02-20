@@ -10,15 +10,30 @@ const colorUnchange = (id) => {
   document.getElementById(id).style.display = "unset";
 };
 
-// THIS SCRIPT IS FOR THE FUNCTIONALITY OF HAMBURGER
+// THIS SCRIPT IS FOR THE FUNCTIONALITY OF HAMBURGER MENU
 
+const overlay = document.getElementById("overlay");
 const hamburger = document.getElementById("hamburger");
 const mobileNav = document.getElementById("mobile-nav");
 let menuOpen = false;
 
 hamburger.addEventListener("click", () => {
-  mobileNav.style.transform = !menuOpen
-    ? "translate(-50%, 0)"
-    : "translate(-50%, -150%)";
-  menuOpen = !menuOpen ? true : false;
+  if (!menuOpen) {
+    mobileNav.style.transform = "translate(-50%, 0)";
+    overlay.style.opacity = "0.5";
+    menuOpen = true;
+  } 
+  else {
+    mobileNav.style.transform = "translate(-50%, -150%)";
+    overlay.style.opacity = "0";
+    menuOpen = false;
+  }
+} );
+
+overlay.addEventListener("click", () => {
+  if (menuOpen) {
+    mobileNav.style.transform = "translate(-50%, -150%)";
+    overlay.style.opacity = "0";
+    menuOpen = false;
+  }
 });
