@@ -15,6 +15,8 @@ const colorUnchange = (id) => {
 const overlay = document.getElementById("overlay");
 const hamburger = document.getElementById("hamburger");
 const mobileNav = document.getElementById("mobile-nav");
+const hamburgerLinks = document.getElementsByClassName("mobile-nav-links");
+
 let menuOpen = false;
 
 hamburger.addEventListener("click", () => {
@@ -28,7 +30,7 @@ hamburger.addEventListener("click", () => {
     overlay.style.opacity = "0";
     menuOpen = false;
   }
-} );
+});
 
 overlay.addEventListener("click", () => {
   if (menuOpen) {
@@ -37,3 +39,13 @@ overlay.addEventListener("click", () => {
     menuOpen = false;
   }
 });
+
+for (let i=0; i<hamburgerLinks.length; i++) {
+  hamburgerLinks[i].addEventListener("click", () => {
+    if (menuOpen) {
+      mobileNav.style.transform = "translate(-50%, -150%)";
+      overlay.style.opacity = "0";
+      menuOpen = false;
+    }
+  });
+}
