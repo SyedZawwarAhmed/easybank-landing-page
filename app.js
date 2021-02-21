@@ -12,14 +12,18 @@ const colorUnchange = (id) => {
 
 // THIS SCRIPT IS FOR THE FUNCTIONALITY OF HAMBURGER MENU
 
-const overlay = document.getElementById("overlay");
+const container = document.getElementById("container");
 const hamburger = document.getElementById("hamburger");
+
+
+const overlay = document.getElementById("overlay");
 const mobileNav = document.getElementById("mobile-nav");
 const hamburgerLinks = document.getElementsByClassName("mobile-nav-links");
 
 let menuOpen = false;
 
-hamburger.addEventListener("click", () => {
+container.addEventListener("click", () => {
+  
   if (!menuOpen) {
     mobileNav.style.transform = "translate(-50%, 0)";
     overlay.style.opacity = "0.5";
@@ -30,6 +34,7 @@ hamburger.addEventListener("click", () => {
     overlay.style.opacity = "0";
     menuOpen = false;
   }
+  hamburger.classList.toggle("cross");
 });
 
 overlay.addEventListener("click", () => {
@@ -37,6 +42,7 @@ overlay.addEventListener("click", () => {
     mobileNav.style.transform = "translate(-50%, -150%)";
     overlay.style.opacity = "0";
     menuOpen = false;
+    hamburger.classList.toggle("cross");
   }
 });
 
