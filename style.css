@@ -412,6 +412,16 @@ MEDIA QURRIES
 =============
 */
 
+@media screen and (min-width: 1440px) {
+  .intro-img {
+    position: relative;
+  }
+  
+  .intro-img img {
+    margin-left: 0;
+  }
+}
+
 @media screen and (max-width: 1150px) {
   .intro-img {
     width: 630px;
@@ -609,6 +619,7 @@ MEDIA QURRIES
   .intro-img {
     width: 100%;
   }
+
 
   .intro-img img {
     min-height: 30rem;
