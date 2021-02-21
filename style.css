@@ -152,7 +152,7 @@ nav {
   margin: 0 auto;
   height: max-content;
   background-color: var(--very-light-gray);
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 
 .mobile-nav .links {
@@ -602,7 +602,15 @@ MEDIA QURRIES
     max-width: 100%;
   }
 
+  .intro {
+    /* margin-top: 27rem; */
+  }
+
   .intro-img {
     width: 100%;
+  }
+
+  .intro-img img {
+    min-height: 30rem;
   }
 }
