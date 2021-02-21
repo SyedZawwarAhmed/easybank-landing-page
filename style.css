@@ -25,6 +25,7 @@ html {
 body {
   position: relative;
   background-color: var(--very-light-gray);
+  width: 100%;
 }
 
 .overlay {
@@ -151,7 +152,7 @@ nav {
   margin: 0 auto;
   height: max-content;
   background-color: var(--very-light-gray);
-  transition: all 0.4s linear;
+  transition: all 0.4s ease;
 }
 
 .mobile-nav .links {
@@ -170,22 +171,10 @@ MAIN SITE
 */
 
 .main {
-  /* position: relative; */
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
 }
-
-/* .main::after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background: black;
-  opacity: 0.5;
-} */
 
 /* HOME PAGE */
 
@@ -210,6 +199,7 @@ MAIN SITE
   height: max-content;
   padding: 1rem;
   margin-top: 5rem;
+  word-wrap: break-word;
 }
 
 .intro-title {
@@ -614,6 +604,12 @@ MEDIA QURRIES
 
   .intro,
   .about-intro {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .intro-img {
     width: 100%;
   }
 }
