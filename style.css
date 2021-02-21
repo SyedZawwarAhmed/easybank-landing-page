@@ -152,7 +152,7 @@ nav {
   margin: 0 auto;
   height: max-content;
   background-color: var(--very-light-gray);
-  transition: all 0.4s ease;
+  transition: all 0.5s ease;
 }
 
 .mobile-nav .links {
@@ -349,21 +349,10 @@ FOOTER
 */
 
 .footer {
-  /* position: relative; */
   background-color: var(--dark-blue);
   height: max-content;
+  width: 100%;
 }
-
-/* .footer::after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background: black;
-  opacity: 0.5;
-} */
 
 .sub-footer {
   width: var(--general-width);
@@ -609,6 +598,10 @@ MEDIA QURRIES
 }
 
 @media screen and (max-width: 460px) {
+  nav {
+    max-width: 100%;
+  }
+
   .intro-img {
     width: 100%;
   }
