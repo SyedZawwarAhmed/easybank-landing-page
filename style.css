@@ -30,7 +30,6 @@ body {
 
 .overlay {
   position: absolute;
-  content: "";
   top: 0;
   left: 0;
   bottom: 0;
@@ -40,6 +39,7 @@ body {
   opacity: 0;
   z-index: 1;
   transition: 0.3s;
+  pointer-events: none;
 }
 
 a {
