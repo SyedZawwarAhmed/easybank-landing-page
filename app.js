@@ -41,8 +41,8 @@ overlay.addEventListener("click", () => {
   if (menuOpen) {
     mobileNav.style.transform = "translate(-50%, -150%)";
     overlay.style.opacity = "0";
-    menuOpen = false;
     hamburger.classList.toggle("cross");
+    menuOpen = false;
   }
 });
 
@@ -51,6 +51,7 @@ for (let i=0; i<hamburgerLinks.length; i++) {
     if (menuOpen) {
       mobileNav.style.transform = "translate(-50%, -150%)";
       overlay.style.opacity = "0";
+      hamburger.classList.toggle("cross");
       menuOpen = false;
     }
   });
