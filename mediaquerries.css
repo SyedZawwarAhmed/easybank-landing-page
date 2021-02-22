@@ -1,214 +1,212 @@
 @media screen and (min-width: 1440px) {
-    .intro-img {
-      position: relative;
-    }
-    
-    .intro-img img {
-      margin-left: 0;
-    }
+  .intro-img {
+    position: relative;
   }
-  
-  @media screen and (max-width: 1150px) {
-    .intro-img {
-      width: 630px;
-    }
-  
-    .facility h3 {
-      font-size: 1.4rem;
-    }
+
+  .intro-img img {
+    margin-left: 0;
   }
-  
-  @media screen and (max-width: 1050px) {
-    .intro-img {
-      width: 540px;
-    }
+}
+
+@media screen and (max-width: 1150px) {
+  .intro-img {
+    width: 630px;
   }
-  
-  @media screen and (max-width: 980px) {
-    :root {
-      --general-width: 90%;
-    }
-  
-    .nav {
-      padding-right: 0;
-      padding-left: 0;
-    }
-  
-    .intro {
-      margin-top: 0;
-      padding: 0;
-    }
-  
-    .intro-img {
-      width: 500px;
-    }
-  
-    .facilities,
-    .articles {
-      gap: 0.6rem;
-    }
-  
-    .facility h3 {
-      font-size: 1.25rem;
-    }
-  
-    .blog img {
-      height: 10rem;
-    }
+
+  .facility h3 {
+    font-size: 1.4rem;
   }
-  
-  @media screen and (max-width: 870px) {
-    .intro-img {
-      width: 450px;
-    }
+}
+
+@media screen and (max-width: 1050px) {
+  .intro-img {
+    width: 540px;
   }
-  
-  @media screen and (max-width: 850px) {
-    .home {
-      height: 31rem;
-    }
-  
-    .intro {
-      margin-top: 5rem;
-    }
-  
-    .about-intro {
-      margin-bottom: 3rem;
-    }
-  
-    .facility h3 {
-      font-size: 1.2rem;
-    }
+}
+
+@media screen and (max-width: 980px) {
+  :root {
+    --general-width: 90%;
   }
-  
-  @media screen and (max-width: 830px) {
-    .intro-img {
-      width: 400px;
-    }
-  
-    .facilities,
-    .articles {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2rem;
-    }
-  
-    .facilities h3 {
-      font-size: 1.5rem;
-    }
-  
-    .blog img {
-      height: 12rem;
-    }
+
+  .nav {
+    padding-right: 0;
+    padding-left: 0;
   }
-  
-  @media screen and (max-width: 775px) {
-    .nav .btn {
-      display: none;
-    }
-  
-    .nav > .links {
-      display: none;
-    }
-  
-    .container {
-      display: block;
-    }
-  
-    .mobile-nav {
-      display: block;
-      z-index: 1;
-    }
-  
-    .home {
-      background-image: url(images/bg-intro-mobile.svg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 0;
-      background-position-y: -12rem;
-      height: max-content;
-    }
-  
-    .intro {
-      margin: 30rem auto 3rem;
-      text-align: center;
-    }
-  
-    .intro-img {
-      top: -3rem;
-      right: 50%;
-      transform: translateX(50%);
-      width: 450px;
-    }
-  
-    .intro-img img {
-      margin: 0;
-    }
-  
-    .sub-about {
-      text-align: center;
-    }
-  
-    .about-intro {
-      margin-left: auto;
-      margin-right: auto;
-      width: 27rem;
-    }
-  
-    .blog-title {
-      text-align: center;
-    }
-  
-    .sub-footer {
-      width: max-content;
-      margin: 0 auto;
-      text-align: center;
-      display: grid;
-    }
-  
-    .sub-footer > div {
-      gap: 2rem;
-    }
-  
-    .logos {
-      margin-bottom: 1rem;
-    }
-  
-    .sub-footer ul + ul {
-      margin-bottom: 1rem;
-    }
+
+  .intro {
+    margin-top: 0;
+    padding: 0;
   }
-  
-  @media screen and (max-width: 540px) {
-    .facilities,
-    .articles {
-      margin-left: auto;
-      margin-right: auto;
-      grid-template-columns: minmax(auto, 400px);
-    }
-  
-    .intro,
-    .about-intro {
-      width: 100%;
-    }
+
+  .intro-img {
+    width: 500px;
   }
-  
-  @media screen and (max-width: 460px) {
-    nav {
-      max-width: 100%;
-    }
-  
-    .intro {
-      /* margin-top: 27rem; */
-    }
-  
-    .intro-img {
-      width: 100%;
-    }
-  
-  
-    .intro-img img {
-      min-height: 30rem;
-    }
+
+  .facilities,
+  .articles {
+    gap: 0.6rem;
   }
-  
+
+  .facility h3 {
+    font-size: 1.25rem;
+  }
+
+  .blog img {
+    height: 10rem;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .intro-img {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .home {
+    height: 31rem;
+  }
+
+  .intro {
+    margin-top: 5rem;
+  }
+
+  .about-intro {
+    margin-bottom: 3rem;
+  }
+
+  .facility h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .intro-img {
+    width: 400px;
+  }
+
+  .facilities,
+  .articles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .facilities h3 {
+    font-size: 1.5rem;
+  }
+
+  .blog img {
+    height: 12rem;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  .nav .btn {
+    display: none;
+  }
+
+  .nav > .links {
+    display: none;
+  }
+
+  .container {
+    display: block;
+  }
+
+  .mobile-nav {
+    display: block;
+    z-index: 1;
+  }
+
+  .home {
+    background-image: url(images/bg-intro-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0;
+    background-position-y: -12rem;
+    height: max-content;
+  }
+
+  .intro {
+    margin: 30rem auto 3rem;
+    text-align: center;
+  }
+
+  .intro-img {
+    top: -3rem;
+    right: 50%;
+    transform: translateX(50%);
+    width: 450px;
+  }
+
+  .intro-img img {
+    margin: 0;
+  }
+
+  .sub-about {
+    text-align: center;
+  }
+
+  .about-intro {
+    margin-left: auto;
+    margin-right: auto;
+    width: 27rem;
+  }
+
+  .blog-title {
+    text-align: center;
+  }
+
+  .sub-footer {
+    width: max-content;
+    margin: 0 auto;
+    text-align: center;
+    display: grid;
+  }
+
+  .sub-footer > div {
+    gap: 2rem;
+  }
+
+  .logos {
+    margin-bottom: 1rem;
+  }
+
+  .sub-footer ul + ul {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .facilities,
+  .articles {
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: minmax(auto, 400px);
+  }
+
+  .intro,
+  .about-intro {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  nav {
+    max-width: 100%;
+  }
+
+  .intro {
+    /* margin-top: 27rem; */
+  }
+
+  .intro-img {
+    width: 100%;
+  }
+
+  .intro-img img {
+    min-height: 30rem;
+  }
+}
