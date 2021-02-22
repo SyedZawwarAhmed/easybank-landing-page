@@ -408,8 +408,8 @@ FOOTER
   cursor: pointer;
 }
 
-.social-fill {
-  display: none;
+.social-logos:hover {
+  fill: var(--lime-green);
 }
 
 .sub-footer li {
