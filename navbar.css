@@ -1,0 +1,143 @@
+nav {
+  position: fixed;
+  width: 100%;
+  background-color: var(--white);
+  z-index: 10;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: var(--general-width);
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.links {
+  display: flex;
+}
+
+.links li {
+  list-style: none;
+  margin: 0.5em;
+}
+
+.links li a {
+  position: relative;
+  color: var(--grayish-blue);
+}
+
+.links li a::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0.3rem;
+  bottom: -1.9rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: linear-gradient(
+    to right,
+    var(--lime-green),
+    var(--bright-cyan)
+  );
+  transition: 0.3s ease-out;
+}
+
+.links li a:hover {
+  color: var(--dark-blue);
+}
+
+.links li a:hover::after {
+  width: 100%;
+}
+
+.btn {
+  color: var(--light-grayish-blue);
+  background-image: linear-gradient(
+    to right,
+    var(--lime-green),
+    var(--bright-cyan),
+    var(--lime-green)
+  );
+  background-size: 200%;
+  padding: 0.8em 2em;
+  border-radius: 2rem;
+  font-weight: 700;
+  transition: 0.4s;
+}
+
+.btn:hover {
+  opacity: 0.5;
+  background-position: right;
+}
+
+.container {
+  display: none;
+  height: 2rem;
+  width: 3rem;
+}
+
+.hamburger {
+  position: relative;
+  width: 2.5rem;
+  height: 3px;
+  background-color: black;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+}
+
+.hamburger::before,
+.hamburger::after {
+  position: absolute;
+  content: "";
+  width: 2.5rem;
+  height: 3px;
+  background-color: inherit;
+  top: 0.6rem;
+  transition: all 0.3s ease;
+}
+
+.hamburger::after {
+  top: -0.6rem;
+}
+
+.cross {
+  width: 0;
+}
+
+.cross::before,
+.cross::after {
+  transform: translateX(-50%) rotate(225deg);
+  top: 0;
+}
+
+.cross::after {
+  transform: translateX(-50%) rotate(-225deg);
+}
+
+.mobile-nav {
+  display: none;
+  position: fixed;
+  top: 4.5rem;
+  left: 50%;
+  transform: translate(-50%, -150%);
+  width: 95%;
+  margin: 0 auto;
+  height: max-content;
+  background-color: var(--very-light-gray);
+  transition: all 0.3s ease;
+}
+
+.mobile-nav .links {
+  text-align: center;
+  flex-direction: column;
+  line-height: 2rem;
+}
+
+.mobile-nav .links a::after {
+  bottom: -0.7rem;
+}

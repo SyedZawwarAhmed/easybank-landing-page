@@ -1,0 +1,46 @@
+.about {
+  background-color: var(--light-grayish-blue);
+  height: max-content;
+}
+
+.sub-about {
+  display: flex;
+  flex-direction: column;
+  width: var(--general-width);
+  margin: 0 auto;
+}
+
+.about-intro {
+  width: 34rem;
+  margin: 5rem 0;
+}
+
+.about-title {
+  color: var(--dark-blue);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.about-para {
+  color: var(--grayish-blue);
+}
+
+.facilities {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.facility {
+  width: 100%;
+}
+
+.facility * {
+  margin-bottom: 2rem;
+}
+
+.facility h3 {
+  font-size: 1.6rem;
+  font-weight: 300;
+}

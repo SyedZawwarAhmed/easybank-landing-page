@@ -1,0 +1,49 @@
+.home {
+  height: calc(100vh - 2rem);
+  display: flex;
+  align-items: center;
+  background-image: url(images/bg-intro-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 520px;
+  background-position-y: -170px;
+}
+
+.sub-home {
+  width: var(--general-width);
+  margin: 0 auto;
+}
+
+.intro {
+  width: 27rem;
+  height: max-content;
+  padding: 1rem;
+  margin-top: 5rem;
+  word-wrap: break-word;
+}
+
+.intro-title {
+  color: var(--dark-blue);
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.intro-para {
+  color: var(--grayish-blue);
+  margin-bottom: 2.5rem;
+}
+
+.intro-img {
+  position: absolute;
+  overflow: hidden;
+  width: 730px;
+  top: -1rem;
+  right: 0;
+}
+
+.intro-img img {
+  width: 100%;
+  height: auto;
+  margin-left: 8.7rem;
+}
