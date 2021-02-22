@@ -206,6 +206,10 @@
     width: 100%;
   }
 
+  .intro-title {
+      font-size: 2.2rem;
+  }
+
   .intro-img img {
     min-height: 30rem;
   }
