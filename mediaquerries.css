@@ -1,4 +1,8 @@
 @media screen and (min-width: 1440px) {
+  .sub-home  {
+    width: fit-content;
+  }
+
   .intro-img {
     position: relative;
   }
@@ -10,17 +14,11 @@
 
 @media screen and (max-width: 1150px) {
   .intro-img {
-    width: 630px;
+    width: 500px;
   }
 
   .facility h3 {
     font-size: 1.4rem;
-  }
-}
-
-@media screen and (max-width: 1050px) {
-  .intro-img {
-    width: 540px;
   }
 }
 
@@ -37,10 +35,6 @@
   .intro {
     margin-top: 0;
     padding: 0;
-  }
-
-  .intro-img {
-    width: 500px;
   }
 
   .facilities,

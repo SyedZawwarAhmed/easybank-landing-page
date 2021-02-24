@@ -10,6 +10,7 @@
 }
 
 .sub-home {
+  display: flex;
   width: var(--general-width);
   margin: 0 auto;
 }
